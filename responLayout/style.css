@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    text-align: center;
+    line-height: 3;
+}
+h1 {
+    margin: 0;
+}
+.header {
+    background-color: brown;
+}
+.navigation {
+    background-color: aquamarine;
+}
+.main {
+    background-color: rgb(242, 138, 10);
+    line-height: 15;
+}
+.aside {
+    background-color: blueviolet;
+}
+.footer {
+    background-color: blue;
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+     .header, .footer {
+            width:100%;
+        }
+    .navigation{
+            flex: 2;
+    }
+    .main {
+            flex: 4;
+        }
+    .aside {
+            flex: 2;
+        }
+    }
+
